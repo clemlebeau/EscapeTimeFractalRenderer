@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Build",
+      "command": "C:/msys64/mingw64/bin/g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-IC:/msys64/mingw64/include/SDL2",
+        "-IC:/msys64/mingw64/include/libpng16",
+        "-IC:/msys64/mingw64/include",
+        "-Dmain=SDL_main",
+        "-IC:/msys64/mingw64/include/harfbuzz",
+        "-IC:/msys64/mingw64/include/freetype2",
+        "-IC:/msys64/mingw64/include/glib-2.0",
+        "-IC:/msys64/mingw64/lib/glib-2.0/include",
+        "-mms-bitfields",
+        "${fileDirname}\\main.cpp",
+        "-o",
+        "${fileDirname}\\bin\\Programme.exe",
+        "-LC:/msys64/mingw64/lib",
+        "-lSDL2_image",
+        "-lSDL2_ttf",
+        "-lmingw32",
+        "-lSDL2main",
+        "-lSDL2",
+        "-mwindows"
+      ],
+      "options": {
+        "cwd": "C:/msys64/mingw64/bin"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compilation."
+    }
+  ],
+  "version": "2.0.0"
+}
