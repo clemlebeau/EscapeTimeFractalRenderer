@@ -5,11 +5,10 @@
 
 class Complex
 {
-private:
+public:
     double real;
     double imag;
 
-public:
     Complex(double real = 0.0, double imag = 0.0)
     {
         this->real = real;
