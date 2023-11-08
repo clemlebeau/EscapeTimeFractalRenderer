@@ -74,11 +74,19 @@ public:
 
     double modulus(const Complex &complex)
     {
-        return sqrt(complex.real * complex.real + complex.imag * complex.imag);
+        return sqrt(modulusSquared(complex));
     }
 
     double modulus()
     {
         return modulus(*this);
+    }
+
+    double modulusSquared(const Complex &complex) {
+        return complex.real * complex.real + complex.imag * complex.imag;
+    }
+
+    double modulusSquared() {
+        return modulusSquared(*this);
     }
 };
